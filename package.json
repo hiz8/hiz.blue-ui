@@ -21,5 +21,8 @@
     "tslib": "^2.8.1",
     "typescript": "^5.6.3"
   },
-  "files": ["package.json", "README.md", "LICENSE", "dist"]
+  "files": ["package.json", "README.md", "LICENSE", "dist"],
+  "publishConfig": {
+    "@hiz8:registry": "https://npm.pkg.github.com"
+  }
 }
