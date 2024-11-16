@@ -1,0 +1,23 @@
+{
+  "name": "@hiz8/blue-ui",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "type": "module",
+  "scripts": {
+    "build": "rollup -c"
+  },
+  "keywords": [],
+  "author": "hiz8",
+  "license": "MIT",
+  "description": "",
+  "workspaces": ["packages/core"],
+  "devDependencies": {
+    "@biomejs/biome": "^1.9.4",
+    "@rollup/plugin-commonjs": "^28.0.1",
+    "@rollup/plugin-typescript": "^12.1.1",
+    "rollup": "^4.27.2",
+    "rollup-plugin-dts": "^6.1.1",
+    "tslib": "^2.8.1",
+    "typescript": "^5.6.3"
+  }
+}
