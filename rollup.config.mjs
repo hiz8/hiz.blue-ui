@@ -1,12 +1,13 @@
 import commonjs from "@rollup/plugin-commonjs";
 import typescript from "@rollup/plugin-typescript";
+import { vanillaExtractPlugin } from "@vanilla-extract/rollup-plugin";
 import { dts } from "rollup-plugin-dts";
 
 export default [
   {
     input: "packages/core/src/index.ts",
     output: {
-      file: "dist/index.js",
+      dir: "dist",
       format: "esm",
     },
     plugins: [
@@ -17,13 +18,14 @@ export default [
         tsconfig: "./tsconfig.json",
         exclude: ["**/__tests__/**"],
       }),
+      vanillaExtractPlugin(),
     ],
     external: ["react", "react-dom"],
   },
   {
     input: "packages/core/src/index.ts",
     output: {
-      file: "dist/index.d.ts",
+      dir: "dist",
       format: "esm",
     },
     plugins: [dts()],
