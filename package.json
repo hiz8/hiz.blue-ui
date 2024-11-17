@@ -1,6 +1,6 @@
 {
   "name": "@hiz8/blue-ui",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "type": "module",
@@ -11,9 +11,7 @@
   "author": "hiz8",
   "license": "MIT",
   "description": "",
-  "workspaces": [
-    "packages/core"
-  ],
+  "workspaces": ["packages/core"],
   "devDependencies": {
     "@biomejs/biome": "^1.9.4",
     "@rollup/plugin-commonjs": "^28.0.1",
@@ -24,12 +22,7 @@
     "tslib": "^2.8.1",
     "typescript": "^5.6.3"
   },
-  "files": [
-    "package.json",
-    "README.md",
-    "LICENSE",
-    "dist"
-  ],
+  "files": ["package.json", "README.md", "LICENSE", "dist"],
   "publishConfig": {
     "@hiz8:registry": "https://npm.pkg.github.com"
   }
