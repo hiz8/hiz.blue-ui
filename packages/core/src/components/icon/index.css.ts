@@ -1,4 +1,5 @@
 import { style, styleVariants, vars } from "../../styles.css";
+import { encodedSvgs } from "./assets/encodedSvgs";
 
 export const icon = style({
   lineHeight: 0,
@@ -36,62 +37,62 @@ export const color = styleVariants({
 export const type = styleVariants({
   home: {
     "::before": {
-      WebkitMaskImage: "url(./assets/home.svg)",
-      maskImage: "url(./assets/home.svg)",
+      WebkitMaskImage: `url(${encodedSvgs.home})`,
+      maskImage: `url(${encodedSvgs.home})`,
     },
   },
   homeBold: {
     "::before": {
-      WebkitMaskImage: "url(./assets/home-bold.svg)",
-      maskImage: "url(./assets/home-bold.svg)",
+      WebkitMaskImage: `url(${encodedSvgs["home-bold"]})`,
+      maskImage: `url(${encodedSvgs["home-bold"]})`,
     },
   },
   feed: {
     "::before": {
-      WebkitMaskImage: "url(./assets/feed.svg)",
-      maskImage: "url(./assets/feed.svg)",
+      WebkitMaskImage: `url(${encodedSvgs.feed})`,
+      maskImage: `url(${encodedSvgs.feed})`,
     },
   },
   github: {
     "::before": {
-      WebkitMaskImage: "url(./assets/github.svg)",
-      maskImage: "url(./assets/github.svg)",
+      WebkitMaskImage: `url(${encodedSvgs.github})`,
+      maskImage: `url(${encodedSvgs.github})`,
     },
   },
   global: {
     "::before": {
-      WebkitMaskImage: "url(./assets/global.svg)",
-      maskImage: "url(./assets/global.svg)",
+      WebkitMaskImage: `url(${encodedSvgs.global})`,
+      maskImage: `url(${encodedSvgs.global})`,
     },
   },
   works: {
     "::before": {
-      WebkitMaskImage: "url(./assets/works.svg)",
-      maskImage: "url(./assets/works.svg)",
+      WebkitMaskImage: `url(${encodedSvgs.works})`,
+      maskImage: `url(${encodedSvgs.works})`,
     },
   },
   worksBold: {
     "::before": {
-      WebkitMaskImage: "url(./assets/works-bold.svg)",
-      maskImage: "url(./assets/works-bold.svg)",
+      WebkitMaskImage: `url(${encodedSvgs["works-bold"]})`,
+      maskImage: `url(${encodedSvgs["works-bold"]})`,
     },
   },
   blog: {
     "::before": {
-      WebkitMaskImage: "url(./assets/blog.svg)",
-      maskImage: "url(./assets/blog.svg)",
+      WebkitMaskImage: `url(${encodedSvgs.blog})`,
+      maskImage: `url(${encodedSvgs.blog})`,
     },
   },
   blogBold: {
     "::before": {
-      WebkitMaskImage: "url(./assets/blog-bold.svg)",
-      maskImage: "url(./assets/blog-bold.svg)",
+      WebkitMaskImage: `url(${encodedSvgs["blog-bold"]})`,
+      maskImage: `url(${encodedSvgs["blog-bold"]})`,
     },
   },
   externalLink: {
     "::before": {
-      WebkitMaskImage: "url(./assets/external-link.svg)",
-      maskImage: "url(./assets/external-link.svg)",
+      WebkitMaskImage: `url(${encodedSvgs["external-link"]})`,
+      maskImage: `url(${encodedSvgs["external-link"]})`,
     },
   },
 });
