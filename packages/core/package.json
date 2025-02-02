@@ -1,11 +1,12 @@
 {
   "name": "core",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "encode:svg": "node scripts/encode-svg.js"
   },
   "author": "hiz8",
   "license": "MIT",
